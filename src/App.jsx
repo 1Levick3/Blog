@@ -7,6 +7,8 @@ import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-route
 import Pgmain from './Pgmain';
 import Cardprofile from './Cardprofile';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
+import { useEffect } from 'react';
+import backgroundImage from './assets/landscape.png'; // Adjust the path as needed
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -29,6 +31,29 @@ function AnimatedRoutes() {
 }
 
 function App() {
+  useEffect(() => {
+    document.body.style.backgroundImage = `url(${backgroundImage})`;
+    document.body.style.backgroundColor = '#292E39';
+    document.body.style.backgroundSize = 'cover';
+    document.body.style.backgroundPosition = 'center';
+    document.body.style.position = 'relative';
+    document.body.style.minHeight = '100vh';
+    document.body.style.margin = '0';
+    document.body.style.padding = '0';
+
+    return () => {
+      // Clean up the styles when the component unmounts
+      document.body.style.backgroundImage = '';
+      document.body.style.backgroundColor = '';
+      document.body.style.backgroundSize = '';
+      document.body.style.backgroundPosition = '';
+      document.body.style.position = '';
+      document.body.style.minHeight = '';
+      document.body.style.margin = '';
+      document.body.style.padding = '';
+    };
+  }, []);
+
   return (
     <Router>
       <Header />
