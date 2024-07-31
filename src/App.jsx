@@ -3,7 +3,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './App.css';
 import Footer from './Footer';
 import Header from './Header';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import {Route, Routes, useLocation } from 'react-router-dom';
 import Pgmain from './Pgmain';
 import Cardprofile from './Cardprofile';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
@@ -29,13 +29,13 @@ function AnimatedRoutes() {
 }
 
 function App() {
-  return (
-    <Router>
+  return (<>
+    
       <Header />
       <AnimatedRoutes />
       <Footer />
-    </Router>
-  );
+    
+  </>);
 }
 
 export default App;
