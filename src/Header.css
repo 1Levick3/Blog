@@ -1,0 +1,67 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0) !important; /* Slightly translucent */
+    backdrop-filter: blur(10px) !important; /* Blur effect */
+    -webkit-backdrop-filter: blur(10px) !important; /* Safari support */
+  }
+  
+  .navbar .navbar-brand, 
+  .navbar .nav-link {
+    border-radius: 8px;
+    color: #D3D9E5 !important; /* White text color */
+  }
+  
+  .navbar-toggler {
+    border: none !important; /* Remove border */
+    background-color: transparent !important; /* Transparent background */
+    outline: none !important; /* Remove outline */
+    box-shadow: none;
+  }
+  
+  .navbar-toggler:focus {
+    border: none !important;
+    box-shadow: none;
+    outline: none !important; /* Ensure no outline on focus */
+  }
+  
+  .navbar-toggler:active {
+    border: none !important;
+    box-shadow: none;
+    background-color: #5e81ac3a !important; /* Clicking effect */
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    border-radius: 8px;
+    background-color: #5e81ac3a !important; /* Darker shade on hover */
+  }
+  
+  .dropdown-menu {
+    background-color: #292E39 !important; /* Slightly translucent */
+    right: 0; /* Position the dropdown to the right */
+    left: auto; /* Override default left positioning */
+  }
+  
+  .dropdown-item {
+    color: #D3D9E5 !important; /* White text color */
+  }
+  
+  .dropdown-item:hover {
+    background-color: #5e81ac3a !important; /* Darker shade on hover */
+  }
+  
+  .navbar-brand {
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 8px;
+  }
+  
+  .navbar-brand:hover {
+    background-color: #5e81ac3a !important;
+  }
+  

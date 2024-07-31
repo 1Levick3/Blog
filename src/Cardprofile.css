@@ -1,0 +1,50 @@
+.custom-div {
+    box-shadow: 0 14px 18px rgba(0, 0, 0, 0.224); /* Example shadow */
+    padding: 30px;
+    background-color: #2E3440;
+    color: #D3D9E5;
+    border-radius: 8px;
+    overflow-y: scroll; /* Optional: to handle long content */
+  
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    -webkit-scrollbar {
+      display: none;
+    }
+  
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    margin-bottom: 10%;
+  }
+  
+  .separator-line {
+    margin: 20px 0;
+    border: 1px solid #4C566A;
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .previous-post, .next-post {
+    width: 48%; /* Increase width to 50% and add a small gap */
+    background-color: #3B4252;
+    color: #D3D9E5;
+    padding: 20px; /* Increase height */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .previous-post:hover, .next-post:hover {
+    background-color: #4C566A;
+  }
+  
+  .previous-post span, .next-post span {
+    display: flex;
+    align-items: center;
+  }
+  

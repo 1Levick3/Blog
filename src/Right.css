@@ -1,0 +1,29 @@
+.right-container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  color: #D3D9E5; /* Light text */
+}
+
+.right-card {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  background-color: #2E3440; /* Darker card background */
+  border: none; /* Remove border if any */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 14px 18px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+   /* Add padding inside the card */
+}
+
+.card-body {  
+  text-align: center;
+}
+
+#player {
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  border-radius: 20px; /* Match the card's rounded corners */
+  overflow: hidden; /* Ensure the iframe respects the border radius */
+}

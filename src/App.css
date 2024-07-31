@@ -1,0 +1,71 @@
+/* General styles for all screen sizes */
+.bleft, .bmid, .bright {
+  padding: 15px;
+}
+
+/* Styles specific to the row layout */
+.row {
+  padding-bottom: 50px;
+  margin: 0; /* Remove margin from the row */
+}
+
+/* Media query for desktop view */
+@media (min-width: 768px) {
+  .bleft, .bright {
+    position: fixed;
+    top: 20;
+    height: 100vh; /* Ensure full viewport height */
+    overflow-y: auto;
+  }
+
+  .bleft {
+    width: 25%;
+    left: 0; /* Position to the left */
+  }
+
+  .bmid {
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+  }
+
+  .bright {
+    width: 25%;
+    right: 0; /* Position to the right */
+  }
+}
+
+/* Media query for mobile view */
+@media (max-width: 767px) {
+  .bleft, .bmid, .bright {
+    position: relative;
+    width: 100%;
+  }
+
+  .bmid {
+    margin: 0;
+  }
+}
+
+/* Animation classes for the page transition */
+.page-enter {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 300ms, transform 300ms;
+}
