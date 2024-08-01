@@ -1,26 +1,26 @@
-/* General styles for all screen sizes */
+
 .bleft, .bmid, .bright {
   padding: 15px;
 }
 
-/* Styles specific to the row layout */
+
 .row {
   padding-bottom: 50px;
-  margin: 0; /* Remove margin from the row */
+  margin: 0; 
 }
 
-/* Media query for desktop view */
+
 @media (min-width: 768px) {
   .bleft, .bright {
     position: fixed;
     top: 20;
-    height: 100vh; /* Ensure full viewport height */
+    height: 100vh; 
     overflow-y: auto;
   }
 
   .bleft {
     width: 25%;
-    left: 0; /* Position to the left */
+    left: 0; 
   }
 
   .bmid {
@@ -31,11 +31,11 @@
 
   .bright {
     width: 25%;
-    right: 0; /* Position to the right */
+    right: 0;
   }
 }
 
-/* Media query for mobile view */
+
 @media (max-width: 767px) {
   .bleft, .bmid, .bright {
     position: relative;
@@ -47,7 +47,7 @@
   }
 }
 
-/* Animation classes for the page transition */
+
 .page-enter {
   opacity: 0;
   transform: translateY(100%);
@@ -68,4 +68,99 @@
   opacity: 0;
   transform: translateY(100%);
   transition: opacity 300ms, transform 300ms;
+}
+
+
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: opacity 1s ease-out;
+  overflow: hidden;
+  opacity: 1;
+}
+
+.loading-screen.fade-out {
+  opacity: 0;
+}
+
+.loading-name {
+  font-size: 10vw;
+  background: linear-gradient(90deg, rgb(255, 255, 255), white);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: colorChange 3s infinite alternate;
+  position: absolute;
+  white-space: nowrap;
+}
+
+@keyframes colorChange {
+  0% {
+    color: lightgrey;
+  }
+  100% {
+    color: white;
+  }
+}
+
+.blocks {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.block {
+  width: 14.2857%;
+  background: black;
+  animation: fadeBlock 3s forwards;
+}
+
+@keyframes fadeBlock {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.block-1 {
+  animation-delay: 0s;
+}
+.block-2 {
+  animation-delay: 0.5s;
+}
+.block-3 {
+  animation-delay: 1s;
+}
+.block-4 {
+  animation-delay: 1.5s;
+}
+.block-5 {
+  animation-delay: 2s;
+}
+.block-6 {
+  animation-delay: 2.5s;
+}
+.block-7 {
+  animation-delay: 3s;
+}
+
+
+.main-content.hidden {
+  opacity: 0;
+}
+
+.main-content {
+  transition: opacity 1s ease-in;
 }
