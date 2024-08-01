@@ -2,11 +2,11 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0) !important; /* Slightly translucent */
-    backdrop-filter: blur(10px) !important; /* Blur effect */
-    -webkit-backdrop-filter: blur(10px) !important;  /* Safari support */
+    background-color: rgba(255, 255, 255, 0) !important; 
+    backdrop-filter: blur(10px) !important; 
+    -webkit-backdrop-filter: blur(10px) !important;  
     color: #D3D9E5 !important;
-    z-index: 1000; /* Ensure the footer stays on top */
+    z-index: 1000; 
   }
   
   .linka {
