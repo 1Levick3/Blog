@@ -5,7 +5,7 @@ import './index.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { setBodyBackground } from './background';
 
-setBodyBackground(); // Set the background image when the app initializes
+setBodyBackground(); 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
