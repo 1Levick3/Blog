@@ -3,23 +3,23 @@ import './Right.css';
 
 const YouTubePlayer = () => {
   useEffect(() => {
-    // Function to create the YouTube player after the API script loads
+ 
     const onYouTubeIframeAPIReady = () => {
       new window.YT.Player('player', {
         height: '390',
         width: '640',
         playerVars: {
           listType: 'playlist',
-          list: 'PLIkYl2ksw5irYkAUbBJp2OG28k3LPdQUB', // Replace with your playlist ID
+          list: 'PLIkYl2ksw5ipR0pYv8LC7NWHGNZwOcDiY', 
         },
       });
     };
 
-    // Check if the YouTube API script is loaded
+   
     if (window.YT && window.YT.Player) {
       onYouTubeIframeAPIReady();
     } else {
-      // Add an event listener to execute the function when the script is loaded
+      
       window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady;
     }
   }, []);
