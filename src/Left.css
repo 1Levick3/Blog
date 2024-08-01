@@ -3,19 +3,19 @@
     display: flex;
     justify-content: center;
 
-    color: #D3D9E5; /* Light text */
+    color: #D3D9E5; 
   }
   
   .profile-card {
-    position: relative; /* Required to position the pseudo-element */
+    position: relative; 
     width: 100%;
     max-width: 300px;
-    background-color: #2E3440; /* Darker card background */
-    border: none; /* Remove border if any */
-    border-radius: 20px; /* Rounded corners */
-    box-shadow: 0 14px 18px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    padding: 20px; /* Add padding inside the card */
-    overflow: hidden; /* Ensure the pseudo-element stays within the card */
+    background-color: #2E3440; 
+    border: none; 
+    border-radius: 20px; 
+    box-shadow: 0 14px 18px rgba(0, 0, 0, 0.2); 
+    padding: 20px; 
+    overflow: hidden; 
 }
 
 .profile-card::before {
@@ -25,42 +25,42 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('./assets/leftp.png'); /* Path to your background image */
-    background-size: cover; /* Ensure the background image covers the container */
-    background-position: center; /* Center the background image */
+    background-image: url('./assets/leftp.png'); 
+    background-size: cover; 
+    background-position: center; 
     background-repeat: no-repeat;
-    opacity: 0.24; /* Adjust opacity here */
-    z-index: 1; /* Place the pseudo-element behind the content */
-    border-radius: 20px; /* Ensure the pseudo-element follows the card's rounded corners */
+    opacity: 0.24; 
+    z-index: 1; 
+    border-radius: 20px; 
 }
 
 .profile-card > * {
     position: relative;
-    z-index: 2; /* Place content above the pseudo-element */
+    z-index: 2; 
 }
 
-/* Other styles remain the same */
+
 .profile-image {
     border-radius: 50%;
     margin-top: 20px;
-    border: 3px solid #D3D9E5; /* Light border around image */
-    width: 80%; /* Adjust width to change the size of the image */
-    height: 80%; /* Adjust height to change the size of the image */
-    object-fit: cover; /* Ensure the image covers the specified size */
-    margin: 0 auto; /* Center the image horizontally */
+    border: 3px solid #D3D9E5; 
+    width: 80%; 
+    height: 80%; 
+    object-fit: cover; 
+    margin: 0 auto; 
 }
 
 .card-body {
-    color: #D3D9E5; /* Light text */
+    color: #D3D9E5; 
 }
 
 .social-icons .btn {
     margin: 5px;
-    background-color: #00000000; /* Dark button background */
-    border: none; /* Remove button border */
-    color: #D3D9E5; /* Light text */
+    background-color: #00000000; 
+    border: none; 
+    color: #D3D9E5; 
 }
 
 .social-icons .btn:hover {
-    background-color: #5e81ac3a; /* Slightly lighter on hover #5E81AC */
+    background-color: #5e81ac3a; 
 }
