@@ -1,4 +1,3 @@
-// background.js
 import backgroundImage from '/src/assets/landscape.png';
 
 export const setBodyBackground = () => {
