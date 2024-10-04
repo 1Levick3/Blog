@@ -10,7 +10,7 @@ const About = () => {
             </p>
             <br />
             <p>
-                Oh hey there! Fancy seeing you here. If you’re on this page, you probably know me already. But just in case, allow me to reintroduce myself. I’m Levick, your friendly neighborhood software developer from India. When I&#39;m not coding, you’ll find me tickling the ivories on my piano or conquering virtual worlds in video games. That’s the lowdown on me!
+                Oh hey there! Fancy seeing you here. If you’re on this page, you probably know me already. But just in case, allow me to reintroduce myself. I’m Levick, software developer from the Grid. When I&#39;m not coding, you’ll find me tickling the ivories on my piano or conquering virtual worlds in video games. That’s the lowdown on me!
             </p>
             <p>
                 Now, about this blog page—let me spill the beans. I was inspired by a GitHub whiz named Urara. They had this super cool GitHub Pages template, but Svelte and Markdown were just too much for my lazy bones. So, I whipped up this page in ReactJS, which, by the way, I’ve been learning for a whole week now. Oh, and the main page is in Russian because I’ve been learning the language for six months. No practice partners, though, so I’m just sprinkling Russian wherever I can!
