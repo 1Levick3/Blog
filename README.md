@@ -7,4 +7,5 @@ Issues
 2) text overflow fix in bottom tags<br>
 3) music bar still looks ugly af<br>
 4) blog more readable reduce flashy content increase font size?<br>
-5) add guts theme
+5) add guts theme<br>
+6) image wait animation? maybe
