@@ -7,10 +7,10 @@ import moon from "/src/Markdownjsx/full-moon.jpg";
 import vimb from "/src/Markdownjsx/vimB.png";
 
 const blogPosts = [
-  { date: "July 31, 2024", title: "About", description: "💙..About..em..what?", link: "post2", year: 2024, bgImage: aboutme },
-  { date: "February 22, 2024", title: "Docker Essentials: Navigating the Container Seas", description: "Docker and its Best Practices 🐳", link: "post3", year: 2024, bgImage: meme },
-  { date: "December 31, 2023", title: "Astrophotography", description: "Various photos taken through my camera this year", link: "post4", year: 2023, bgImage: moon },
-  { date: "December 24, 2023", title: "Learning Vim...?", description: "Beginner guide to get started with vim", link: "post5", year: 2023, bgImage: vimb }
+  { date: "July 31, 2024", title: "About", description: "💙..About..em..what?", link: "about", year: 2024, bgImage: aboutme },
+  { date: "February 22, 2024", title: "Docker Essentials: Navigating the Container Seas", description: "Docker and its Best Practices 🐳", link: "docker_tutorial_part1", year: 2024, bgImage: meme },
+  { date: "December 31, 2023", title: "Astrophotography", description: "Various photos taken through my camera this year", link: "Astrophotography", year: 2023, bgImage: moon },
+  { date: "December 24, 2023", title: "Learning Vim...?", description: "Beginner guide to get started with vim", link: "vim_tutorial", year: 2023, bgImage: vimb }
 ];
 
 const Mid = () => {
